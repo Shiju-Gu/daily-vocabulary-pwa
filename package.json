@@ -1,0 +1,12 @@
+{
+  "name": "daily-vocabulary-of-shiju-gu",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Mobile-ready PWA and cloud API for a personal vocabulary deck.",
+  "scripts": {
+    "check": "node --check public/app.js && node --check api/_server.js && node --check api/index.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
