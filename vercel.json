@@ -1,0 +1,37 @@
+{
+  "functions": {
+    "index.js": {
+      "includeFiles": [
+        "index.html",
+        "styles.css",
+        "vocabulary-app.js",
+        "manifest.webmanifest",
+        "service-worker.js",
+        "icons/**",
+        "api/**"
+      ]
+    },
+    "server.cjs": {
+      "includeFiles": [
+        "index.html",
+        "styles.css",
+        "vocabulary-app.js",
+        "manifest.webmanifest",
+        "service-worker.js",
+        "icons/**",
+        "api/**"
+      ]
+    },
+    "server.js": {
+      "includeFiles": [
+        "index.html",
+        "styles.css",
+        "vocabulary-app.js",
+        "manifest.webmanifest",
+        "service-worker.js",
+        "icons/**",
+        "api/**"
+      ]
+    }
+  }
+}
