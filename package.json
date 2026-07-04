@@ -1,9 +1,0 @@
-{
-  "name": "daily-vocabulary-pwa",
-  "version": "1.0.0",
-  "private": true,
-  "main": "server.cjs",
-  "engines": {
-    "node": ">=18"
-  }
-}
