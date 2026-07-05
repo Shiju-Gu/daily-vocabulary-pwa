@@ -1,37 +1,24 @@
 {
-  "functions": {
-    "index.js": {
-      "includeFiles": [
-        "index.html",
-        "styles.css",
-        "vocabulary-app.js",
-        "manifest.webmanifest",
-        "service-worker.js",
-        "icons/**",
-        "api/**"
-      ]
+  "version": 2,
+  "rewrites": [
+    {
+      "source": "/api/:path*",
+      "destination": "/api/:path*"
     },
-    "server.cjs": {
-      "includeFiles": [
-        "index.html",
-        "styles.css",
-        "vocabulary-app.js",
-        "manifest.webmanifest",
-        "service-worker.js",
-        "icons/**",
-        "api/**"
-      ]
-    },
-    "server.js": {
-      "includeFiles": [
-        "index.html",
-        "styles.css",
-        "vocabulary-app.js",
-        "manifest.webmanifest",
-        "service-worker.js",
-        "icons/**",
-        "api/**"
+    {
+      "source": "/:path*",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/service-worker.js",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "no-cache"
+        }
       ]
     }
-  }
+  ]
 }
